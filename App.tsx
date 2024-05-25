@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import CustomIcon from './CustomIcon';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -72,6 +73,7 @@ function App(): React.JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
+        <CustomIcon name="home" color="red" />
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
